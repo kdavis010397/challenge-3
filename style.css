@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 0.65em;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans";
+  background-color: #19a2ae;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -20rem -30rem, 40rem 30rem;
+}
+@media screen and (min-width: 1920px) {
+  body {
+    background-repeat: no-repeat, no-repeat;
+    background-position: -10% -30rem, 110% 30rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-repeat: no-repeat, no-repeat;
+    background-position: 130% -50rem, -40% 20rem;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  background-color: #fff;
+  height: 35rem;
+  width: 30rem;
+  justify-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-rows: 40% repeat(3, 1fr);
+}
+.card__background {
+  height: 100%;
+  overflow: hidden;
+}
+.card__image {
+  box-sizing: content-box;
+  transform: translateY(-50%);
+  width: 25%;
+  border-radius: 5rem;
+  border: 0.4rem solid white;
+  grid-row: 2 3;
+}
+.card__name {
+  color: #2d3248;
+  font-size: 2rem;
+  margin-top: -2.5rem;
+}
+.card__age {
+  color: #19a2ae;
+  font-weight: 400;
+}
+.card__location {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #19a2ae;
+  margin-top: -2rem;
+}
+.card__stats {
+  display: grid;
+  font-weight: 700;
+  font-size: 1.4rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  border-top: 1px solid rgba(206, 206, 206, 0.493);
+  align-items: center;
+}
+
+.stat {
+  font-size: 1rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.num__description {
+  letter-spacing: 2px;
+}
+
+.attribution {
+  padding-top: 2rem;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
